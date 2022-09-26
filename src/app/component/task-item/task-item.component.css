@@ -1,0 +1,54 @@
+.task {
+    background-color:#fed43b;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: solid 2px #193053;
+    color:#193053;
+    
+}
+
+.task.reminder {
+    border-left: 10px solid rgb(41, 5, 240);
+    
+    transition: 0.3s;
+}
+
+.task h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#193053;
+}
+
+.fondofechaexpired {
+    width: max-content;
+    margin-left: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: #193053;
+    background-color: #75c0fc;
+}
+
+.calendarIcon {
+    color: #fe8786
+}
+.catIcon {
+    color: #fab020;
+
+}
+
+.calendarIcon:hover {
+
+    color:#eea3ee;
+}
+
+
+
+.sub-task-right {
+ text-align: end;
+}
+
+

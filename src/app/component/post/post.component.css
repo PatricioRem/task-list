@@ -1,0 +1,18 @@
+.taskData {
+    list-style: none;
+}
+
+li {
+    margin: 15px 0px;
+}
+
+.data-task-div {
+    background-color:#fed43b;
+    margin: 5px;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: solid 2px #193053;
+    color:#193053;
+    
+}

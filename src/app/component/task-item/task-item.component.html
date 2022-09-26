@@ -1,0 +1,24 @@
+<div
+    class="task"
+    [ngClass]="{ reminder: task.reminder }"
+    (click)="onToggle(task)"
+ >
+    <h3><a [routerLink]="['/','post',task.id]">{{task.text}}</a>
+
+        <fa-icon 
+        [icon]="fatrashcan" 
+        class="calendarIcon"
+        (click)="onDelete(task)"
+        ></fa-icon>
+    </h3>
+<h5>
+    <p *ngIf="task.datetime<=ahora; else elseBlock" class="fondofechaexpired">
+        {{task.datetime}}
+    </p><ng-template #elseBlock>{{task.datetime}}</ng-template>        
+    <div class="sub-task-right" [ngSwitch]="task.categoria">
+        <fa-icon *ngSwitchCase="'Estudio'" [icon]="educacionIcon" class="catIcon fa-lg" title="Estudio"></fa-icon>
+        <fa-icon *ngSwitchCase="'Médico'" [icon]="healthIcon" class="catIcon fa-lg" title="Medico"></fa-icon>
+        <fa-icon *ngSwitchCase="'Doméstico'" [icon]="broom" class="catIcon fa-lg" title="Doméstico"></fa-icon>
+        <fa-icon *ngSwitchCase="'Trabajo'" [icon]="briefcase" class="catIcon fa-lg" title="Trabajo"></fa-icon>
+    </div>
+</h5>

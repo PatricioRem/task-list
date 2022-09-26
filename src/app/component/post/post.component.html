@@ -1,0 +1,12 @@
+ <div class="data-task-div">
+ <h2>Task Details</h2>
+    <ul class="taskData">
+        <li>Name: {{respuesta.text | json }}</li> 
+        <li>Date & Time: {{respuesta.datetime | json }}</li>
+        <li>Reminder: {{respuesta.reminder | json }}</li>
+        <li>Type: {{respuesta.categoria | json }}</li>
+        <li>ID: {{respuesta.id | json }}</li>
+    </ul>
+</div>
+<br><br>
+<h4><a routerLink="/">Go Back</a></h4>

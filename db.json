@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "text": "Entregar última modificación TaskList",
+      "datetime": "2022-08-26T10:00",
+      "reminder": false,
+      "categoria": "Trabajo",
+      "id": 1
+    },
+    {
+      "text": "Examen de física",
+      "datetime": "2022-09-09T17:00",
+      "reminder": false,
+      "categoria": "Estudio",
+      "id": 3
+    },
+    {
+      "text": "Pasar la aspiradora",
+      "datetime": "2022-08-27T16:00",
+      "reminder": false,
+      "categoria": "Doméstico",
+      "id": 4
+    },
+    {
+      "text": "Ir al médico.",
+      "datetime": "2022-08-29T14:30",
+      "reminder": true,
+      "categoria": "Médico",
+      "id": 5
+    }
+  ]
+}

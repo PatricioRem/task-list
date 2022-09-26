@@ -1,0 +1,33 @@
+.add-form {
+    margin-bottom: 40px;
+}
+
+#datetime {
+
+    background-color: #bcdffb;
+    border-radius: 10px;
+    height: 45px;
+    border: solid 2px #193053;
+    color: #193053;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.1);
+  }
+  
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+  }
+
+#text {
+    
+    background-color: #bcdffb;
+    border-radius: 10px;
+    height: 45px;
+    border: solid 2px #193053;
+}
+
+

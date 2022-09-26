@@ -1,0 +1,45 @@
+<form 
+class="add-form" 
+(ngSubmit)="onSubmit()"
+*ngIf="showAddTask"
+>
+    <div class="form-control">
+        <label for="text">Task</label>
+        <input 
+            type="text" 
+            name="text" 
+            id="text" 
+            placeholder="Add task text"
+            [(ngModel)]="text"
+        >
+    </div>
+
+    <div class="form-control">
+        <label for="text">Day & Time</label>
+        <input 
+        type="datetime-local" 
+        name="datetime" 
+        id="datetime" 
+        placeholder="Add day & time"
+        [(ngModel)]="datetime"
+    >
+    </div>
+
+    <div class="form-control-check">
+        <label class="checkbox" for="text">Reminder</label>
+        <input 
+        type="checkbox" 
+        name="reminder" 
+        id="reminder"
+        [(ngModel)]="reminder"
+    >
+    </div>
+    <div class="custom-select">
+        <label>Type</label>
+        <select name="categoria" [(ngModel)]="categoria" id="categoria" style="background:none; border:0px; padding:0px; margin-left: 10px;">
+        <option *ngFor="let name of enumKeys" [label]="name" [value]="name"> {{categoria[name]}} </option>
+    </select>
+ </div>
+    <br>
+    <input type="submit" value="Save Task" class="btn btn-block"> 
+</form>
